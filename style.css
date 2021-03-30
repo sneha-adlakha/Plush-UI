@@ -11,7 +11,7 @@ body{
     margin: 0px;
     font-family: 'Acme', sans-serif;
     font-family: 'Cinzel', serif;
-    background-color:#7e5865;
+    background-color: var(--second-color);
 
 }
 #docpage {
@@ -23,13 +23,30 @@ body{
                          "nav  main main main"
                          "nav  main main main";
     grid-template-rows: 80px 1fr 1fr;
-    grid-template-columns: 250px 150px 1fr 1fr;
+    grid-template-columns: 215px 150px 1fr 1fr;
     
   }
+
+
+  .sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+  .sticky + .main {
+    padding-top: 60px;
+  }
+
+
   
-  #docpage > header {
+  #docpage > #topnav {
     grid-area: head;
+    overflow: hidden;
     background-color: var(--primary-color);
+    top:0;
+    width: 100%;
+    z-index:9999999;
+
     color: white;
   }
 
@@ -41,8 +58,30 @@ body{
     justify-content: space-between;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 0 0.5rem;
-    margin-top:  6px;
+    padding: 0;
+    margin-top:  0px;
+  }
+  .header-title{
+    margin-left: 3.5rem;
+    position: relative;
+    
+
+
+  }
+  .header-title>p{
+    font-size: 6px;
+    position: absolute;
+    top:1rem
+    
+  }
+  #topnav a{
+    float:right;
+    display: block;
+    color:var(--second-color);
+    text-align: center;
+    padding:1rem;
+    text-decoration: none;
+
   }
 
 
@@ -54,7 +93,7 @@ body{
   #docpage > main {
     grid-area: main;
     background-color:  #fad4d4;
-
+    
     
   }
 
@@ -62,19 +101,38 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem 0.5rem;
-    margin-top:  6px;
-   
-  }
-.sidenav>a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    margin-top: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-size:1rem;
+    align-content: left;
+    padding: 0.5rem;
+    padding-left: 0rem;
+    margin-top:  6.5rem;    
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    
+}
+.sidenav>ul>li{
+  list-style-type: none;
+  padding: 0.5rem 0.5rem;
+  
+  
+}
+.sidenav ul li a
+{
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;  
+}
+
+
+.sidenavigation_item {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.active, .sidenavigation_item:hover {
+ background-color: var(--primary-color);
+  
 }
 
 .main{
@@ -108,7 +166,7 @@ body{
   
   height:5rem;
   width:5rem;
-  position:relative;
+  /* position:relative; */
   background-size: cover;
 
 }
@@ -160,10 +218,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+
 .snippet{
   width: 70%; 
   margin-top: 1rem;  
-  height: 300px; 
+  height: 400px; 
   border:0; 
   transform: scale(1); 
   overflow:hidden;
@@ -171,8 +230,8 @@ body{
 }
 
 .snippetlarge{
-  height: 700px;
-  width: 80%; 
+  height: 600px;
+  width: 90%; 
   margin-top: 1rem;  
   border:0; 
   transform: scale(1); 
@@ -180,8 +239,8 @@ body{
 
 }
 .snippetextralarge{
-  height: 500px;
-  width: 80%; 
+  height: 700px;
+  width: 90%; 
   margin-top: 1rem;  
   border:0; 
   transform: scale(1); 
@@ -540,6 +599,8 @@ body{
   font-family: 'Montserrat', sans-serif;
   
 }
+
+
 
 .list-stacked>ul>li{
   list-style-type:none;
