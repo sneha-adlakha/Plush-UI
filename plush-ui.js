@@ -3,7 +3,8 @@ var viewbtn=document.getElementById("view-btn");
 var span=document.getElementsByClassName("close")[0];
 var cancel=document.getElementsByClassName("btn-cancel")[0];
 var navbar = document.getElementById("topnav");
-
+var cards=document.getElementById("closecard");
+var exit=document.getElementById("exit-btn")
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
@@ -35,6 +36,11 @@ cancel.onclick=function(){
     modal.style.display="none";
 }
 
+exit.onclick=function(){
+  cards.style.display="none";
+}
+
+
 
 
 var btnContainer = document.getElementById("sidenavigation");
@@ -56,3 +62,33 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function fit() {
+  var iframes = document.querySelectorAll("iframe.gh-fit")
+
+  for(var id = 0; id < iframes.length; id++) {
+      var win = iframes[id].contentWindow
+      var doc = win.document
+      var html = doc.documentElement
+      var body = doc.body
+      var ifrm = iframes[id] // or win.frameElement
+
+      if(body) {
+          body.style.overflowX = "scroll" // scrollbar-jitter fix
+          body.style.overflowY = "hidden"
+      }
+      if(html) {
+          html.style.overflowX = "scroll" // scrollbar-jitter fix
+          html.style.overflowY = "hidden"
+          var style = win.getComputedStyle(html)
+          ifrm.width = parseInt(style.getPropertyValue("width")) // round value
+          ifrm.height = parseInt(style.getPropertyValue("height"))
+      }
+  }
+
+  requestAnimationFrame(fit)
+}
+
+addEventListener("load", requestAnimationFrame.bind(this, fit))
+
+
