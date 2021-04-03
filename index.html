@@ -10,25 +10,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="plush-ui.css">
+   <style type="text/css">
+       .blob-code, .blob-num {      
+       font-size: 16px !important;
+       font-family: 'Montserrat', sans-serif !important;
+       background-color:  #FCA5A5!important;
+    color:  black!important;
+       
+    }
+    .gist-meta {      
+       display: none;
+    }
+</style>
+
 
    
 </head>
 <body>
     <section id="docpage">
         <header class="header" id="topnav">
-                <div class="header-title">
-                    <h2 class="nav-title">Plush <span>UI</span></h2>
-                </div>                   
-                    <div class="list-inline">
-                        <ul>
-                            <li><a  href="https://github.com/sneha-adlakha" >GITHUB </a></li>
-                            <li><a  href="https://www.twitter.com/Snehaadlakha12" >TWITTER </a></li>
-                            <li><a  href="https://www.instagram.com/i_am_sneha_adlakha" >INSTAGRAM </a></li>
-                            <li><a  href="https://www.linkedin.com/in/sneha-adlakha-7ab5b71b/" >LINKEDIN </a></li>
-                        </ul> 
-                    </div>
-            </header>
-        <nav class="sidenav">
+            <div class="header-title">
+                <button id="hamburger-btn" class="btn hamburger"><i class="fa fa-bars"></i></button>
+                <h2 class="nav-title">Plush <span>UI</span></h2>
+            </div>                   
+                <div class="list-inline">
+                    <ul>
+                        <li><a  href="https://github.com/sneha-adlakha" >GITHUB </a></li>
+                        <li><a  href="https://www.twitter.com/Snehaadlakha12" >TWITTER </a></li>
+                        <li><a  href="https://www.instagram.com/i_am_sneha_adlakha" >INSTAGRAM </a></li>
+                        <li><a  href="https://www.linkedin.com/in/sneha-adlakha-7ab5b71b/" >LINKEDIN </a></li>
+                      
+                    </ul> 
+                </div>
+                   
+                
+        </header>
+
+    
+        <nav id="sidenavigation" class="sidenav">
             <ul>
             <li class="sidenavigation_item"><a href="#guide" >Guide</a></li>
             <li class="sidenavigation_item" ><a href="#avatar" >Avatar</a></li>
@@ -52,9 +71,17 @@
                    <h1>Installation Guide</h1>
                    <p>Looking to quickly add CSS to your project? Use<b> Plush UI</b> Components and make your Designs <b>Splash.</b></p>
                       <h3>CSS</h3> 
-                        <p>Copy-paste the below line into your HTML head tag to use Plush Library.</p>        
+                        <p>Copy-paste the below line into your HTML head tag to use Plush Library.</p>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/a1dc7bdb513f89c668f586b24839c079.js"></script>     
+
+                        </div>
+                      
                      <h3>JavaScript</h3> 
-                        <p>Add the library by Copying below JS link at the end of body tag.</p>                          
+                        <p>Add the library by Copying below JS link at the end of body tag.</p>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/86d2dcd66d06ca6db66ebf1b9ff94705.js"></script>
+                        </div>                     
                 </section>
                 <section id="avatar">
                     <h1>Avatars & Square Image</h1>
@@ -69,7 +96,11 @@
                             <img src="./src/imga.png" class="squareimg"></img>
                         </div>
                     </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/0fb044d79ad417617c5b5414adf7743d.js"></script>
+                    </div>
                 </section>
+
 
                 <section id="alert">
                     <h1>Alerts</h1>
@@ -91,6 +122,9 @@
                         Info! This is information Alert..
                         <span class="btnclose">&times</span>
                     </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/1cdd6f4840b02be87b54d5a46871be35.js"></script>
+                    </div>
                                    
                 </section>
 
@@ -101,6 +135,9 @@
                         <span class="mybadge style2">Flat 60%</span>
                         <span class="mybadge style3">SALE</span>
                         <span class="mybadge style4">Alert</span>
+                    </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/f7f8b609f60ae875fd0ea31906b95cde.js"></script>
                     </div>
                 </section>
                 <section id="badgesec">
@@ -114,6 +151,9 @@
                         <i class="fa fa-folder"></i>
                         <span class="badge-i">2</span>
                       </div>
+                    </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/c0afbc4030c1d3997de1d3d0db528b9a.js"></script>
                     </div>
                 </section>
                 <section id="button">
@@ -130,8 +170,11 @@
                                 Google Me!!!
                             </a>
                         
-                        </button> 
+                        </button>
                     </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/bff1ede036a3390907dd6ded4ec6da1c.js"></script>
+                        </div>
 
                 </section>
                 <section id="cards">
@@ -146,7 +189,10 @@
                       </div>
                       <span class="badge primary card-badge">DISCOUNT</span>
                     </div>
-                    <h4>Close Button with Card</h4>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/aa9be0501020ea6a18b11572f9ef8f62.js"></script>
+                    </div>
+                    <h4> Card with Close Button </h4>
                     <div id="closecard" class="cards">
                       <img src="./src/Nikon.jpg" alt="image" />
                       <div class="cards-content">
@@ -158,6 +204,9 @@
                       <div id="exit-btn" class="exit-btn">
                         <i class="bi bi-x"></i>
                       </div>
+                    </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/ddc1f8651483e45d89aabbd49fe9db80.js"></script>
                     </div>
                   </section>
             
@@ -207,6 +256,9 @@
                                 </button>                    
                             </div>
                         </div>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/1071e304f75133fad179008eb48e965a.js"></script>
+                        </div>
                 </section>
 
 
@@ -224,6 +276,9 @@
                                     Primary
                                 </button>                    
                             </div>
+                        </div>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/b0a1933302a832580fca44870a706f83.js"></script>
                         </div>
                 </section>
                 <section id="image">
@@ -246,7 +301,11 @@
                     <div class="image-circletwo">
                         <img src="./src/fuji2.jpg" alt="">
                     </div>
+
                 </section>
+                <div class="codediv">
+                    <script src="https://gist.github.com/sneha-adlakha/1f3b1df3db66ae1b2f518a628894f39c.js"></script>
+                </div>
                 <section id="imageol">
                         <h1>Image Overlay</h1>
                         <div class="img-container">
@@ -256,6 +315,9 @@
                                     <div class="overlay overlaybottom"></div>
                                 </div>                      
                             </div>
+                        </div>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/511e9f3e83fa66a658d33abbd2f350d6.js"></script>
                         </div>
 
                 </section>
@@ -286,8 +348,9 @@
                         </div>
                         <p>1000 likes on your Posts</p>
                   </div>
-                  
-                </div>
+                  <div class="codediv">
+                    <script src="https://gist.github.com/sneha-adlakha/f1c91f96497858080c3e0d34a415600c.js"></script>
+                      </div>
                    <h4>Simple List</h4>
                    <div class="list-ul">
                     <ul>
@@ -311,6 +374,9 @@
                         <li> About </li>
                         <li> Contact</li>           
                     </ul> 
+                </div>
+                <div>
+                    <script src="https://gist.github.com/sneha-adlakha/fe3412e7329829914c1fba9ed4db980e.js"></script>
                 </div>
 
                 </section>
@@ -376,36 +442,29 @@
                     </div> 
                     <label>Give Rating</label>           
                     </div>
+                    <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/577082eed60053abdf2356e5ebe64d53.js"></script>
+                    </div>
                 </section>
                 <section id="simplifiedgrid">
-                    <h1>Grids</h1>
-                    <h4>Grid with Left Navigation</h4>
-                    <div>
-                        <section id="gridexample">
-                            <header>Header</header>
-                            <nav>Navigation</nav>
-                            <main>Doc area</main>
-                    </div>
-                    <h4>Simplified Grid</h4>
-                        <div class="sgridcontainer">
-                            <div class="sheader">Header</div>
-                            <div class="scontent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quos fugiat perferendis modi illo eveniet at sunt atque dicta debitis error, perspiciatis est facilis recusandae in tenetur voluptate minus quae?
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quos fugiat perferendis modi illo eveniet at sunt atque dicta debitis error, perspiciatis est facilis recusandae in tenetur voluptate minus quae?
-                            </div>
-                            <div class="sfooter">Footer</div>
+                        <h4>Two items in a grid</h4>
+                        <div class="grid-2">
+                          <div class="column1">Item1</div>
+                          <div class="column2">Item2</div>
                         </div>
-                    <h4>Two items in a grid</h4>
-                    <div class="grid-2">
-                      <div class="column1">Item1</div>
-                      <div class="column2">Item2</div>
-                    </div>
-                    <h4>Three items in a grid</h4>
-                    <div class="grid3">
-                      <div class="column1">Item1</div>
-                      <div class="column2">Item2</div>
-                      <div class="column3">Item3</div>
-                    </div>
-                </section>
+                        <h4>Three items in a grid</h4>
+                        <div class="grid3">
+                          <div class="column1">Item1</div>
+                          <div class="column2">Item2</div>
+                          <div class="column3">Item3</div>
+                        </div>
+                        <div class="codediv">
+                            <script src="https://gist.github.com/sneha-adlakha/7b1a51eb4dcec7ee49dde9a55ef8aefc.js"></script>
+                            </div>
+
+                    </section>
+
+                
               <section id="utilities">
                     <h1>
                         Text Utilities
@@ -417,6 +476,9 @@
                         <p class="txt-normal">Normal Text</p>
                         <p class="txt-light">Lighter Text</p>
                       </div>
+                      <div class="codediv">
+                        <script src="https://gist.github.com/sneha-adlakha/f4bb90951bc94d826473d9c1b0d15157.js"></script>
+                      </div>
 
                 </section>
                  <section id="input">
@@ -427,7 +489,11 @@
                         <label class="label">Enter Your Aadhar number:-</label>
                         <textarea class="invalidtextbox"></textarea>
                     </div>
+
               </section>
+              <div class="codediv">
+                <script src="https://gist.github.com/sneha-adlakha/77ad7dd71bbde81eaee1727dbbf2b080.js"></script>
+            </div>
     </main>
 </section>
 <script src="plush-ui.js"></script>
