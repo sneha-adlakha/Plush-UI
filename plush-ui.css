@@ -1035,6 +1035,7 @@ body{
 .codediv{
   width:90%;
   padding:1rem;
+  padding-left: 0.5rem;
  
 }
 
@@ -1300,7 +1301,8 @@ display: none;
 
 .codediv{
   width:80%;
-  padding:0.5rem;
+  padding:1rem;
+  padding-left: 0.3rem;
 
 }
 .blob-code, .blob-num {      
@@ -1309,6 +1311,12 @@ display: none;
   background-color:  #FCA5A5!important;
 color:  black!important;
 
+}
+.navigation{
+display: none;
+}
+#alert{
+  padding:0.5rem;
 }
 
 }
