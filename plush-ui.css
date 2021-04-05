@@ -1067,6 +1067,39 @@ body{
     grid-template-columns: 10% auto;
     
   }
+
+
+  
+  #docpage > #topnav {
+
+    overflow: hidden;
+    background-color: var(--primary-color);
+    top:0;
+    width: 100%;
+    z-index:9999999;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
+    margin-top:  0px;
+  }
+
+  .sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+  }
+  .sticky + .main {
+    padding-top: 60px;
+  }
+
   
 .sidenav{
   width:100px;
@@ -1074,7 +1107,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction:column;
-justify-content: flex-start;
+  justify-content: flex-start;
   padding-left: 0rem;
   margin-top: 3.5rem;
   margin-left: 0;
@@ -1090,13 +1123,7 @@ justify-content: flex-start;
   
   
 }
-.main
-{
-  padding: 0.5rem;
-  margin-left: 0;
-  font-family: 'Montserrat', sans-serif;
-   
-}
+
 .section 
 {
     padding: 0.5rem 0.5rem;
