@@ -40,7 +40,9 @@ exit.onclick=function(){
   cards.style.display="none";
 }
 
-
+const navToggle = document.getElementById("nav-toggle");
+const navPillsMobile = document.getElementById("nav-pills-mobile");
+navToggle.addEventListener("click", () => {  if (navPillsMobile.style.display === "block") {    navPillsMobile.style.display = "none";  } else {    navPillsMobile.style.display = "block";  }});
 
 
 var btnContainer = document.getElementById("sidenavigation");
