@@ -1061,8 +1061,8 @@ body{
     width: 100vh;
     height: 100vh;
   
-    grid-template-areas: "head head head"
-                         "nav  main main";
+    grid-template-areas: "head head"
+                         "nav  main";
     grid-template-rows: 10% auto;
     grid-template-columns: 10% auto;
     
@@ -1305,20 +1305,16 @@ display: none;
   padding-left: 0.3rem;
 
 }
-.blob-code, .blob-num {      
-  font-size: 10px !important;
-  font-family: 'Montserrat', sans-serif !important;
-  background-color:  #FCA5A5!important;
-color:  black!important;
 
-}
 .navigation{
 display: none;
 }
 #alert{
   padding:0.5rem;
 }
-
+.codediv{
+  display: none;
+}
 }
 
 
